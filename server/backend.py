@@ -26,7 +26,7 @@ class Backend_Api:
             system_message = f'You are GPT-3.5 also known as ChatGPT, a large language model trained by OpenAI. Stricktly follow the users instructions. Knowledge cutoff: 2021-09-01 Current date: {current_date}'
 
             if '0040' in request.json['model']:
-                system_message = f'You are GPT-4, newest generation of OpenAI GPT series. Stricktly follow the users instructions. Knowledge cutoff: 2021-09-01 Current date: {current_date}'
+                system_message = f'You are a helpful assistant.'
 
             extra = []
             if internet_access:
